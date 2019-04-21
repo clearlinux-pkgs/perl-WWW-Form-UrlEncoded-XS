@@ -4,7 +4,7 @@
 #
 Name     : perl-WWW-Form-UrlEncoded-XS
 Version  : 0.25
-Release  : 10
+Release  : 11
 URL      : https://cpan.metacpan.org/authors/id/K/KA/KAZEBURO/WWW-Form-UrlEncoded-XS-0.25.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/K/KA/KAZEBURO/WWW-Form-UrlEncoded-XS-0.25.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libw/libwww-form-urlencoded-xs-perl/libwww-form-urlencoded-xs-perl_0.25-1.debian.tar.xz
@@ -28,6 +28,7 @@ Summary: dev components for the perl-WWW-Form-UrlEncoded-XS package.
 Group: Development
 Requires: perl-WWW-Form-UrlEncoded-XS-lib = %{version}-%{release}
 Provides: perl-WWW-Form-UrlEncoded-XS-devel = %{version}-%{release}
+Requires: perl-WWW-Form-UrlEncoded-XS = %{version}-%{release}
 
 %description dev
 dev components for the perl-WWW-Form-UrlEncoded-XS package.
@@ -55,7 +56,7 @@ license components for the perl-WWW-Form-UrlEncoded-XS package.
 cd ..
 %setup -q -T -D -n WWW-Form-UrlEncoded-XS-0.25 -b 1
 mkdir -p deblicense/
-mv %{_topdir}/BUILD/debian/* %{_topdir}/BUILD/WWW-Form-UrlEncoded-XS-0.25/deblicense/
+cp -r %{_topdir}/BUILD/debian/* %{_topdir}/BUILD/WWW-Form-UrlEncoded-XS-0.25/deblicense/
 
 %build
 export http_proxy=http://127.0.0.1:9/
