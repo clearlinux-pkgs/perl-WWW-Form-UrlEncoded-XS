@@ -4,7 +4,7 @@
 #
 Name     : perl-WWW-Form-UrlEncoded-XS
 Version  : 0.26
-Release  : 13
+Release  : 14
 URL      : https://cpan.metacpan.org/authors/id/K/KA/KAZEBURO/WWW-Form-UrlEncoded-XS-0.26.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/K/KA/KAZEBURO/WWW-Form-UrlEncoded-XS-0.26.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libw/libwww-form-urlencoded-xs-perl/libwww-form-urlencoded-xs-perl_0.25-1.debian.tar.xz
@@ -75,7 +75,7 @@ fi
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-WWW-Form-UrlEncoded-XS
 cp %{_builddir}/WWW-Form-UrlEncoded-XS-0.26/LICENSE %{buildroot}/usr/share/package-licenses/perl-WWW-Form-UrlEncoded-XS/220fe941787679d8a043c0444548ac186c86f309
-cp %{_builddir}/WWW-Form-UrlEncoded-XS-0.26/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-WWW-Form-UrlEncoded-XS/6a1f9ee5ecd3e725a7167826a7eee8a2ec733b06
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-WWW-Form-UrlEncoded-XS/6a1f9ee5ecd3e725a7167826a7eee8a2ec733b06
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -100,5 +100,5 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/WWW/Form/UrlEncoded/XS.pm
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/WWW/Form/UrlEncoded/XS/XS.so
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/WWW/Form/UrlEncoded/XS.pm
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/auto/WWW/Form/UrlEncoded/XS/XS.so
