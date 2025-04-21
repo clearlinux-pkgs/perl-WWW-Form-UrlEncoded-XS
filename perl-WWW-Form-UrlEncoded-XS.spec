@@ -7,7 +7,7 @@
 #
 Name     : perl-WWW-Form-UrlEncoded-XS
 Version  : 0.28
-Release  : 26
+Release  : 27
 URL      : https://cpan.metacpan.org/authors/id/K/KA/KAZEBURO/WWW-Form-UrlEncoded-XS-0.28.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/K/KA/KAZEBURO/WWW-Form-UrlEncoded-XS-0.28.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libw/libwww-form-urlencoded-xs-perl/libwww-form-urlencoded-xs-perl_0.25-1.debian.tar.xz
